@@ -1,9 +1,9 @@
 import torch
-from src.utils.helper import *
-from src.models.models import *
-from src.datasets.imagenet1k import *
-from src.train import *
-from tqdm import tqdm
+from torch import nn
+from src.utils.helper import accuracy_fn
+from src.models.models import VisionTransformer
+from src.datasets.cifar100 import get_cifar100_dataloaders
+from src.train import Train
 
 torch.manual_seed(42)
 
